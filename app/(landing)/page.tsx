@@ -84,16 +84,16 @@ export default async function Home() {
 
           <div id="examples" className="mt-16 border border-gray-200 rounded-xl overflow-hidden shadow-sm">
             <div className="bg-gray-50 p-4 border-b border-gray-200 text-left">
-              <span className="inline-block w-3 h-3 rounded-full bg-red-500 mr-2"></span>
-              <span className="inline-block w-3 h-3 rounded-full bg-yellow-500 mr-2"></span>
-              <span className="inline-block w-3 h-3 rounded-full bg-green-500"></span>
+              <span className="inline-block size-3 rounded-full bg-red-500 mr-2"></span>
+              <span className="inline-block size-3 rounded-full bg-yellow-500 mr-2"></span>
+              <span className="inline-block size-3 rounded-full bg-green-500"></span>
             </div>
             <div className="p-6 bg-white text-left">
               <div className="flex">
                 <div className="mr-4 text-gray-400">User:</div>
                 <div>
-                  "I'm feeling nostalgic for my childhood and want something
-                  heartwarming"
+                  &quot;I&apos;m feeling nostalgic for my childhood and want something
+                  heartwarming&quot;
                 </div>
               </div>
               <div className="flex mt-4">
@@ -123,9 +123,9 @@ export default async function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition">
-              <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center mb-4">
+              <div className="size-12 rounded-lg bg-gray-100 flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-gray-600"
+                  className="size-6 text-gray-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -141,14 +141,14 @@ export default async function Home() {
               <h3 className="text-xl font-bold mb-3">Instant Analysis</h3>
               <p className="text-gray-600">
                 Our AI processes your mood description and matches it with
-                films' emotional arcs.
+                films&apos; emotional arcs.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition">
-              <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center mb-4">
+              <div className="size-12 rounded-lg bg-gray-100 flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-gray-600"
+                  className="size-6 text-gray-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -168,9 +168,9 @@ export default async function Home() {
             </div>
 
             <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition">
-              <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center mb-4">
+              <div className="size-12 rounded-lg bg-gray-100 flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-gray-600"
+                  className="size-6 text-gray-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
