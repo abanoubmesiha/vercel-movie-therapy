@@ -2,9 +2,10 @@ import { UserDropdown } from "@/components/user-dropdown";
 import Head from "next/head";
 import { cookies } from "next/headers";
 import Link from "next/link";
-import { auth } from "./(auth)/auth";
+import { auth } from "../(auth)/auth";
 
 export default async function Home() {
+  const newChat = `/recommend`
   const [session, cookieStore] = await Promise.all([auth(), cookies()]);
   const user = session?.user;
   return (
@@ -50,12 +51,12 @@ export default async function Home() {
                 Sign In
               </Link>
             )}
-            <a
-              href="/recommendations"
+            <Link
+              href={newChat}
               className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </nav>
 
@@ -73,15 +74,15 @@ export default async function Home() {
           </p>
 
           <div className="bg-white p-1 rounded-xl shadow-lg inline-flex">
-            <a
-              href="/recommendations"
+            <Link
+              href={newChat}
               className="bg-black text-white font-medium py-3 px-8 rounded-lg text-lg hover:bg-gray-800 transition"
             >
               Try Movie Therapy →
-            </a>
+            </Link>
           </div>
 
-          <div className="mt-16 border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+          <div id="examples" className="mt-16 border border-gray-200 rounded-xl overflow-hidden shadow-sm">
             <div className="bg-gray-50 p-4 border-b border-gray-200 text-left">
               <span className="inline-block w-3 h-3 rounded-full bg-red-500 mr-2"></span>
               <span className="inline-block w-3 h-3 rounded-full bg-yellow-500 mr-2"></span>
@@ -200,14 +201,14 @@ export default async function Home() {
               Join thousands discovering films matched to their emotions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/recommendations"
+              <Link
+              href={newChat}
                 className="bg-white text-black font-medium py-3 px-8 rounded-lg text-lg hover:bg-gray-100 transition"
               >
                 Try Movie Therapy Free
-              </a>
+              </Link>
               <a
-                href="/examples"
+                href="#examples"
                 className="border-2 border-gray-600 font-medium py-3 px-8 rounded-lg text-lg hover:bg-gray-800 transition"
               >
                 See Examples
