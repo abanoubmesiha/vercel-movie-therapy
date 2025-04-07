@@ -1,9 +1,9 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { Button } from './ui/button';
-import { memo } from 'react';
 import { UseChatHelpers } from '@ai-sdk/react';
+import { motion } from 'framer-motion';
+import { memo } from 'react';
+import { Button } from './ui/button';
 
 interface SuggestedActionsProps {
   chatId: string;
@@ -13,24 +13,24 @@ interface SuggestedActionsProps {
 function PureSuggestedActions({ chatId, append }: SuggestedActionsProps) {
   const suggestedActions = [
     {
-      title: 'What are the advantages',
-      label: 'of using Next.js?',
-      action: 'What are the advantages of using Next.js?',
+      title: 'I want to feel like a king',
+      label: 'give me movies about powerful men',
+      action: 'I want to feel like a king, give me movies about powerful men.',
     },
     {
-      title: 'Write code to',
-      label: `demonstrate djikstra's algorithm`,
-      action: `Write code to demonstrate djikstra's algorithm`,
+      title: 'I have a fight I should be prepared for',
+      label: `give me motivational movies about fight heroes.`,
+      action: `I have a fight I should be prepared for, give me motivational movies about fight heroes`,
     },
     {
-      title: 'Help me write an essay',
-      label: `about silicon valley`,
-      action: `Help me write an essay about silicon valley`,
+      title: 'I want to quit my job',
+      label: `give me a movie to help me accept or reject that.`,
+      action: `I want to quit my job, give me a movie to help me accept or reject that.`,
     },
     {
-      title: 'What is the weather',
-      label: 'in San Francisco?',
-      action: 'What is the weather in San Francisco?',
+      title: 'I like women or boys',
+      label: 'movies have pretty sexy girls or boys.',
+      action: 'I like women or boys, give me movies have pretty sexy girls or boys.',
     },
   ];
 
