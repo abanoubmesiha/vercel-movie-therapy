@@ -70,6 +70,9 @@ export default async function RootLayout({
             __html: THEME_COLOR_SCRIPT,
           }}
         />
+        <script
+          async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3348841435471376"
+          crossOrigin="anonymous"></script>
       </head>
       <body className="antialiased">
         <ThemeProvider
