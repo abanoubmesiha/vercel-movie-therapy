@@ -1,4 +1,5 @@
 import { ThemeProvider } from "@/components/theme-provider";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -80,6 +81,7 @@ export default async function RootLayout({
           <Toaster position="top-center" />
           {children}
           <Analytics />
+          <GoogleAnalytics gaId="G-Q78YK981Q5" />
         </ThemeProvider>
       </body>
     </html>
