@@ -74,8 +74,8 @@ export default async function RootLayout({
           async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3348841435471376"
           crossOrigin="anonymous"></script>
         <meta name="google-site-verification" content="tlKUrcQMOcrXkYKpGth6NP1d_7e6D0I649WLRibGeCI" />
-        <meta name="keywords" content="mood recommendation, movie and cinema therapy, cinema-therapy, cinema, advanced movie and cinema therapy, bibliotherapy, therapy, healing, self help, self-help, art therapy, family therapy, movie therapy, video work, film recommendations, film lists"></meta>
-        <meta name="description" content="Everything you might want to know about movie and cinema therapy: this site is aimed at both the self-help seeker and the therapist, providing basic guides and in-depth theory, film recommendations, links to all movie and cinema therapy info on the Web, training opportunities and info on forming your own support group."></meta>
+        <meta name="keywords" content="what to watch, mood recommendation, movie and cinema therapy, cinema-therapy, cinema, advanced movie and cinema therapy, bibliotherapy, therapy, healing, self help, self-help, art therapy, family therapy, movie therapy, video work, film recommendations, film lists"></meta>
+        <meta name="description" content="Everything you might want to know about movie and cinema therapy: this site is aimed at both the self-help seeker and the therapist, helping you decide what to what and when, providing basic guides and in-depth theory, film recommendations, links to all movie and cinema therapy info on the Web, training opportunities and info on forming your own support group."></meta>
       </head>
       <body className="antialiased">
         <ThemeProvider
