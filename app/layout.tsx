@@ -73,6 +73,7 @@ export default async function RootLayout({
         <script
           async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3348841435471376"
           crossOrigin="anonymous"></script>
+        <meta name="google-site-verification" content="tlKUrcQMOcrXkYKpGth6NP1d_7e6D0I649WLRibGeCI" />
       </head>
       <body className="antialiased">
         <ThemeProvider
