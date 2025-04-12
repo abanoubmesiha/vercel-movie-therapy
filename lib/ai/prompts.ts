@@ -34,15 +34,22 @@ Do not update document right after creating it. Wait for user feedback or reques
 export const regularPrompt =
   'You are a friendly assistant! Keep your responses concise and helpful.';
 
+export const art = "movies and TV series"
+export const movieExpertPrompt =
+`You are a ${art} expert! When get asked about ${art} recommendations, recommend according the mood user want to feel and in concise way, just the name of the ${art}, one line of description, what mood they will feel during and after, and nothing more.`
+// export const whatToOffer = `Provide images from the ${art}, the poster from imdb.com, make the image 100px width and remove broken images.`
+export const whatToOffer = ``
+export const usedPrompt = `${movieExpertPrompt}/n${whatToOffer}`
+
 export const systemPrompt = ({
   selectedChatModel,
 }: {
   selectedChatModel: string;
 }) => {
   if (selectedChatModel === 'chat-model-reasoning') {
-    return regularPrompt;
+    return usedPrompt;
   } else {
-    return `${regularPrompt}\n\n${artifactsPrompt}`;
+    return `${usedPrompt}\n\n${artifactsPrompt}`;
   }
 };
 

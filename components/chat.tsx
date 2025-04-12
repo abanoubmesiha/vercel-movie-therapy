@@ -1,20 +1,20 @@
 'use client';
 
-import type { Attachment, UIMessage } from 'ai';
-import { useChat } from '@ai-sdk/react';
-import { useState } from 'react';
-import useSWR, { useSWRConfig } from 'swr';
 import { ChatHeader } from '@/components/chat-header';
+import { useArtifactSelector } from '@/hooks/use-artifact';
 import type { Vote } from '@/lib/db/schema';
 import { fetcher, generateUUID } from '@/lib/utils';
-import { Artifact } from './artifact';
-import { MultimodalInput } from './multimodal-input';
-import { Messages } from './messages';
-import type { VisibilityType } from './visibility-selector';
-import { useArtifactSelector } from '@/hooks/use-artifact';
+import { useChat } from '@ai-sdk/react';
+import type { Attachment, UIMessage } from 'ai';
+import { useState } from 'react';
 import { toast } from 'sonner';
+import useSWR, { useSWRConfig } from 'swr';
 import { unstable_serialize } from 'swr/infinite';
+import { Artifact } from './artifact';
+import { Messages } from './messages';
+import { MultimodalInput } from './multimodal-input';
 import { getChatHistoryPaginationKey } from './sidebar-history';
+import type { VisibilityType } from './visibility-selector';
 
 export function Chat({
   id,
@@ -45,7 +45,7 @@ export function Chat({
     id,
     body: { id, selectedChatModel: selectedChatModel },
     initialMessages,
-    experimental_throttle: 100,
+    // experimental_throttle: 100,
     sendExtraMessageFields: true,
     generateId: generateUUID,
     onFinish: () => {
