@@ -1,3 +1,4 @@
+import EmbedPage from "@/components/embed-page";
 import { UserDropdown } from "@/components/user-dropdown";
 import Head from "next/head";
 import { cookies } from "next/headers";
@@ -5,7 +6,7 @@ import Link from "next/link";
 import { auth } from "../(auth)/auth";
 
 export default async function Home() {
-  const newChat = `/recommend`
+  const newChat = `/recommend`;
   const [session, cookieStore] = await Promise.all([auth(), cookies()]);
   const user = session?.user;
   return (
@@ -117,6 +118,10 @@ export default async function Home() {
 
         {/* Features */}
         <section className="container mx-auto px-6 py-16 max-w-5xl">
+          <EmbedPage src="/chat/a32d80cc-5919-492d-a98f-30879f9f8891" />
+        </section>
+
+        <section className="container mx-auto px-6 py-16 max-w-5xl">
           <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-black to-gray-500 bg-clip-text text-transparent">
             How our AI works
           </h2>
@@ -202,7 +207,7 @@ export default async function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-              href={newChat}
+                href={newChat}
                 className="bg-white text-black font-medium py-3 px-8 rounded-lg text-lg hover:bg-gray-100 transition"
               >
                 Try Movie Therapy Free
