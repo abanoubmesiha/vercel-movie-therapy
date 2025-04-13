@@ -41,7 +41,7 @@ export default async function Home() {
           <div className="text-2xl font-bold bg-gradient-to-r from-black to-gray-600 bg-clip-text text-transparent">
             Movie Therapy
           </div>
-          <div className="flex gap-4">
+          <div className="flex md:gap-4 gap-1">
             {user ? (
               <UserDropdown user={user} />
             ) : (

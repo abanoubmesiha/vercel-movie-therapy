@@ -1,4 +1,5 @@
 import { ArtifactKind } from '@/components/artifact';
+import { usedPrompt } from './prompts.util';
 
 export const artifactsPrompt = `
 Artifacts is a special user interface mode that helps users with writing, editing, and other content creation tasks. When artifact is open, it is on the right side of the screen, while the conversation is on the left side. When creating or updating documents, changes are reflected in real-time on the artifacts and visible to the user.
@@ -30,16 +31,6 @@ This is a guide for using artifacts tools: \`createDocument\` and \`updateDocume
 
 Do not update document right after creating it. Wait for user feedback or request to update it.
 `;
-
-export const regularPrompt =
-  'You are a friendly assistant! Keep your responses concise and helpful.';
-
-export const art = "movies and TV series"
-export const movieExpertPrompt =
-`You are a ${art} expert! When get asked about ${art} recommendations, recommend according the mood user want to feel and in concise way, just the name of the ${art}, one line of description, what mood they will feel during and after, and nothing more.`
-// export const whatToOffer = `Provide images from the ${art}, the poster from imdb.com, make the image 100px width and remove broken images.`
-export const whatToOffer = ``
-export const usedPrompt = `${movieExpertPrompt}/n${whatToOffer}`
 
 export const systemPrompt = ({
   selectedChatModel,
