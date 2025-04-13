@@ -7,7 +7,7 @@ function EmbedPage({ src }: { src: string }) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '500px' }}>
+    <div style={{ position: 'relative', width: '100%', height: '700px' }}>
       <iframe
         ref={iframeRef}
         src={src}
