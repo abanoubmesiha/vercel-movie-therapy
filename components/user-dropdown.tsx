@@ -20,7 +20,7 @@ export function UserDropdown({ user }: { user: User }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button className=" data-[state=open]:bg-sidebar-accent bg-background text-black data-[state=open]:text-sidebar-accent-foreground h-10 hover:text-white">
+        <Button className="md:w-auto w-16 data-[state=open]:bg-sidebar-accent bg-background text-black data-[state=open]:text-sidebar-accent-foreground h-10 hover:text-white">
           <Image
             src={`https://avatar.vercel.sh/${user.email}`}
             alt={user.email ?? "User Avatar"}
