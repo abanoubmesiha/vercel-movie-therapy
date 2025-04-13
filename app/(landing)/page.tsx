@@ -118,7 +118,7 @@ export default async function Home() {
 
         {/* Features */}
         <section className="container mx-auto px-6 py-16 max-w-5xl">
-          <EmbedPage src="/chat/a32d80cc-5919-492d-a98f-30879f9f8891" />
+          <EmbedPage src="/chat/582fe6d3-b85e-4888-aa84-2d8aef2ea34d?isAutoBottomScrollDisabled=true" height={user?'700px':'500px'} />
         </section>
 
         <section className="container mx-auto px-6 py-16 max-w-5xl">

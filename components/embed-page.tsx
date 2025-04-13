@@ -2,12 +2,12 @@
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
 
-function EmbedPage({ src }: { src: string }) {
+function EmbedPage({ src, height }: { src: string, height?: string }) {
   const router = useRouter();
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '500px' }}>
+    <div style={{ position: 'relative', width: '100%', height: height? height : '700px' }}>
       <iframe
         ref={iframeRef}
         src={src}
